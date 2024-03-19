@@ -1,0 +1,59 @@
+/* - Reset - */
+body,
+p,
+a,
+ul,
+li {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*  - Text styles - */
+/*  Font */
+@font-face {
+    font-family: "Poppins";
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-text-color);
+    font-weight: normal;
+}
+
+h1,
+h3 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+/* Text */
+p,
+a,
+li {
+    color: var(--secondary-text-color);
+    font-size: 1.1em;
+}
+
+/* Hover effects */
+h1:hover,
+a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+    cursor: pointer;
+}

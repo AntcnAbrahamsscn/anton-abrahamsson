@@ -1,0 +1,15 @@
+/* Light mode */
+:root {
+    --color-background: #ddcecd;
+    --primary-text-color: #222328;
+    --secondary-text-color: #1c1d21;
+    --accent-color: #f97068;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --color-background: #1c1d21;
+    --primary-text-color: #eee5e5;
+    --secondary-text-color: #ddcecd;
+    --accent-color: #f97068;
+}
