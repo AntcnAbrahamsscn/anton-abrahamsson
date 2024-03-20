@@ -8,7 +8,7 @@ export default function LandingPage() {
     <section className="grid landing-page">
     <div className="welcome-text">
         <h2>
-            28 years old Front-End student with a Media &
+            28 years old <span style={{fontWeight: '700'}} >Front-End</span> student with a Media &
             Communication degree
         </h2>
     </div>

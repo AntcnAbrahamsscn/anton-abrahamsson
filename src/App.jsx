@@ -1,33 +1,18 @@
 import React, { useEffect } from "react";
-import useLocalStorage from "use-local-storage";
 
 import "./index.css";
 import "./stylesheets/global.css";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
-
-// Import the image
+import Case from "./components/Case";
 
 function App() {
-    const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
-
-    useEffect(() => {
-        document.body.dataset.theme = theme;
-    }, [theme]);
-
-    const switchTheme = () => {
-        const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
-    };
-
     return (
-        <body>
-            <header>
-                <Navbar theme={theme} switchTheme={switchTheme} />
-            </header>
+        <div>
+            <Navbar />
             <LandingPage />
-            
-        </body>
+            <Case />
+        </div>
     );
 }
 

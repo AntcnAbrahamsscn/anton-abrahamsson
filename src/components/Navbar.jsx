@@ -1,5 +1,6 @@
 import React from "react";
-import SwitchTheme from "./SwitchTheme";
+// import SwitchTheme from "./SwitchTheme";
+import DarkMode from "./DarkMode";
 
 export default function Navbar({theme, switchTheme}) {
     return (
@@ -13,7 +14,7 @@ export default function Navbar({theme, switchTheme}) {
                     <a href="#contact">about</a>
                 </li>
                 <li className="active">
-                   <a href=""> <SwitchTheme theme={theme} switchTheme={switchTheme} /></a>
+                   <a href=""> <DarkMode /></a>
                 </li>
             </ul>
         </nav>

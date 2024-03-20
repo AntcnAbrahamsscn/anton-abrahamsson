@@ -90,21 +90,17 @@ a:hover {
 
 .app {
     background-color: var(--color-background);
-    /* height: 100vh; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     transition: all 0.5s;
-    /* text-align: center; */
 }
 
-.theme-toggle i {
+.theme-toggle input {
     cursor: pointer;
     font-size: 1.6rem;
     color: var(--primary-text-color);
     width: 1em;
     margin: auto;
 }
+/* TODO: Fix pointer for icon */
 
 .theme-toggle {
     display: flex;
@@ -112,26 +108,23 @@ a:hover {
 }
 
 .site-nav {
-    padding: 0 20px;
     background-color: var(--color-background);
     position: sticky;
     top: 0;
     z-index: 2;
 }
 
-.site-nav li.active a {
-    color: var(--primary);
-}
-
 .site-nav h1 {
     grid-column: 1/2;
     grid-row: 1;
-    /* font-family: "Montserrat Alternates", sans-serif; */
     font-size: 2em;
     transition: 0.3s;
     margin: 0.8em 0 0.8em 0;
 }
 
+.case {
+    height: 70vh;
+}
 .site-nav h1:hover {
     color: var(--primary-text-color);
     transition: 0.3s;
@@ -168,10 +161,10 @@ body {
     content: "";
     position: absolute;
     background-color: var(--primary-text-color);
-    height: 1.5px;
+    height: 1.7px;
     width: 0;
     left: 0;
-    bottom: -3px;
+    bottom: -2px;
     transition: 0.3s;
 }
 .site-nav ul a:hover {
@@ -205,8 +198,84 @@ body {
 }
 
 .landing-page {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding-top: 40px;
+}
+
+/* Small tablets styles */
+@media screen and (min-width: 620px) {
+    .welcome-text {
+        grid-column: 1/5;
+        order: 1;
+        text-align: left;
+    }
+
+    .welcome-img {
+        grid-column: 5/9;
+    }
+
+    .welcome-img img {
+        width: 100%;
+        /* padding-bottom: 40px; */
+    }
+
+    .welcome-img {
+        max-width: 600px;
+    }
+
+    .welcome-text {
+        align-self: center;
+        max-width: 500px;
+    }
+}
+
+/* Large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 18px;
+    }
+    .grid {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .leading {
+        margin: 20px 0;
+    }
+
+    .site-nav {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .site-nav h1 {
+        grid-column: 1/2;
+    }
+
+    #welcome {
+        padding-bottom: 0;
+    }
+
+    #welcome img {
+        padding-bottom: 80px;
+    }
+
+    .projects a {
+        grid-column: span 3;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    #welcome {
+        padding: 30px 0;
+    }
+
+    .grid {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
