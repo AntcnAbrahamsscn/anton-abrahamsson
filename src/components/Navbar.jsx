@@ -1,21 +1,22 @@
-import React from "react";
-// import SwitchTheme from "./SwitchTheme";
 import DarkMode from "./DarkMode";
+import MusicButton from "./MusicButton";
+import "../stylesheets/navbar.css";
 
-export default function Navbar({theme, switchTheme}) {
+export default function Navbar() {
     return (
-        <nav className="site-nav grid hidden">
+        <nav className="site-nav grid">
             <h1>abra.</h1>
             <ul>
-                <li className="active">
-                    <a href="#portfolio">case</a>
+                <li>
+                    <a href="#case">case</a>
                 </li>
-                <li className="active">
+                <li>
                     <a href="#contact">about</a>
                 </li>
-                <li className="active">
-                   <a href=""> <DarkMode /></a>
-                </li>
+                <div className="site-nav-settings">
+                    <DarkMode />
+                    <MusicButton />
+                </div>
             </ul>
         </nav>
     );

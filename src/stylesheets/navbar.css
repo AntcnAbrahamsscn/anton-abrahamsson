@@ -1,0 +1,77 @@
+.site-nav {
+    background-color: var(--color-background);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.site-nav h1 {
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size: 2em;
+    transition: 0.3s;
+    margin: 0.8em 0 0.8em 0;
+}
+
+.site-nav > ul {
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+}
+.site-nav li {
+    margin-left: 30px;
+    list-style-type: none;
+}
+body {
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+.site-nav ul a {
+    position: relative;
+}
+.site-nav ul a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-text-color);
+    height: 1.7px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+.site-nav ul a:hover {
+    color: var(--primary-text-color);
+}
+
+.site-nav ul a:hover:after {
+    width: 100%;
+}
+
+.site-nav-settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    background: var(--primary-text-color);
+    color: var(--color-background);
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 40px;
+    height: 28px;
+}
+
+/* Small tablets styles */
+@media screen and (min-width: 620px) {
+}
+
+/* Large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+    .site-nav h1 {
+        grid-column: 1/3;
+    }
+}
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+}
