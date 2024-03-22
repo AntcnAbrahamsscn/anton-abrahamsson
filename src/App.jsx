@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import "./index.css";
-import "./stylesheets/global.css";
+// import "./stylesheets/global.css";
 import "./stylesheets/media-queries.css";
 
 import Navbar from "./components/Navbar";

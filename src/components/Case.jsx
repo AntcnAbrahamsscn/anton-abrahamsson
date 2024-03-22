@@ -38,7 +38,7 @@ export default function Case() {
                                 <span className="material-symbols-outlined"></span>
                                 <div>
                                     <h2>{item.header}</h2>
-                                    <p>{item.text}</p>
+                                    <p className="">{item.text}</p>
                                 </div>
                             </div>
                         </article>
