@@ -38,4 +38,3 @@ export default function Footer() {
         </div>
     );
 }
-10;
