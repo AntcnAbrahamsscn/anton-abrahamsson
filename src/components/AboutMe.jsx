@@ -3,10 +3,10 @@ import '../stylesheets/about-me.css'
 
 export default function AboutMe() {
     return (
-        <div className="grid ">
+        <section id="about-me"className="grid ">
             <div className="contact-styling">
                 <h3>about me</h3>
-                <p class="leading">
+                <p className="leading">
                     Hi, my name is Anton Abrahamsson. I'm a 28 year old Front
                     End student who loves snowboarding and watching bushcraft videos on YouTube. Two
                     years ago, I completed my Bachelor's degree in Media and
@@ -14,7 +14,7 @@ export default function AboutMe() {
                     and Design at Karlstad University. Since graduation, I have
                     been working as a print editor at at NWT Media and GP.
                 </p>
-                <p class="leading">
+                <p className="leading">
                     In addition, this fall I started my journey into Front End
                     studies, motivated by my interest in web development and
                     programming. My goal is to merge the skills I acquire in
@@ -25,6 +25,6 @@ export default function AboutMe() {
                     2024-11-11 - 2025-01-31 and 2025-03-17 - 2025-06-06.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }

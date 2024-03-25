@@ -1,31 +1,35 @@
 .case-header {
     grid-column: 1/9;
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
 }
 
+/* .case-container {
+    height: 100vh;
+} */
+
 /* Slider */
-section {
+.image-accordion {
     display: flex;
     gap: 10px;
     cursor: pointer;
     width: 100%;
     flex-grow: 1;
     grid-column: 1/9;
-    margin: 20px 0 100px 0;
+    margin: 20px 0 20px 0;
 }
 
 article {
     position: relative;
     overflow: hidden;
     width: 64px;
-    height: 500px;
+    height: 70vh;
     border-radius: 36px;
     display: flex;
     align-items: flex-end;
     opacity: 0.5;
     transition: 0.5s;
-    background-color: white;
+    /* background-color: white; */
 }
 article:hover {
     opacity: 0.75;
@@ -48,11 +52,11 @@ article .content {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    padding: 100px 0 20px 0px;
+    padding: 100px 20px 20px 20px;
     display: flex;
     align-items: center;
     gap: 14px;
-    background: var(--linear-gradient);
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 100%));
     transition: 0.25s;
 }
 
@@ -66,4 +70,8 @@ article img {
     height: 100%;
     width: 100%;
     filter: grayscale(0.6);
+}
+
+.white-color {
+    color: #ddcecd;
 }

@@ -4,7 +4,7 @@ import '../stylesheets/landing-page.css'
 
 export default function LandingPage() {
     return (
-        <div className="grid landing-page">
+        <section id="landing-page" className="grid landing-page">
             <div className="welcome-text">
                 <h2>
                     <span className="span-fp-style"> Hi! I'm Anton.</span>{" "}
@@ -18,6 +18,6 @@ export default function LandingPage() {
             <div className="welcome-img">
                 <img src={antonImage} alt="Image of me myself Anton Abrahamsson" />
             </div>
-        </div>
+        </section>
     );
 }

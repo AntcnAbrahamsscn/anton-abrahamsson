@@ -14,6 +14,7 @@ function App() {
     return (
         <div>
             <Navbar />
+            
             <LandingPage />
             <Case />
             <AboutMe />
