@@ -3,21 +3,10 @@ import DarkMode from "./DarkMode";
 import MusicButton from "./MusicButton";
 import "../stylesheets/navbar.css";
 
-const debounce = (func, delay) => {
-    let timeoutId;
-    return function (...args) {
-        if (timeoutId) {
-            clearTimeout(timeoutId);
-        }
-        timeoutId = setTimeout(() => {
-            func.apply(this, args);
-        }, delay);
-    };
-};
-
 export default function Navbar() {
     const [activeLink, setActiveLink] = useState("");
     const observerRef = useRef(null);
+
     useEffect(() => {
         observerRef.current = new IntersectionObserver(
             (entries) => {
@@ -42,32 +31,17 @@ export default function Navbar() {
         };
     }, []);
 
-    // Function to handle link click
-    const handleNavLinkClick = debounce((link) => {
-        setActiveLink(link);
-        const targetSection = document.getElementById(link);
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: "smooth" });
-        }
-    }, 500); 
-
     return (
         <nav className="site-nav grid">
             <h1><a href="#landing-page">abra.</a></h1>
             <ul>
-                <li className={activeLink === "case" ? "active" : ""}>
-                    <a href="#case"
-                        onClick={() => handleNavLinkClick("case")}
-                        className={activeLink === "case" ? "bold" : ""}
-                    >
-                        {activeLink === "case" ? "/case" : "case"}
+                <li className={activeLink === "case-section" ? "active" : ""}>
+                    <a href="#case-section">
+                        {activeLink === "case-section" ? "/case" : "case"}
                     </a>
                 </li>
                 <li className={activeLink === "about-me" ? "active" : ""}>
-                    <a href="#about-me"
-                        onClick={() => handleNavLinkClick("about-me")}
-                        className={activeLink === "about-me" ? "bold" : ""}
-                    >
+                    <a href="#about-me">
                         {activeLink === "about-me" ? "/about" : "about"}
                     </a>
                 </li>

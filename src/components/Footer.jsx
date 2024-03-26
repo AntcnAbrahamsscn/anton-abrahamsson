@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="footer-flex">
                 <div className="left-text-footer">
                     <p>Anton Abrahamsson</p>
-                    <p>Student @ NBI Handelseakademin</p>
+                    <p>abrahamsson37@gmail.com</p>
                 </div>
                 <div className="social-footer-container">
                     <p className="divider">
@@ -15,23 +15,23 @@ export default function Footer() {
                     </p>
 
                     <div className="social-row">
-                        <i className="fa-brands fa-instagram social-color"></i>
-                        <i className="fa-brands fa-github social-color"></i>
-                        <i className="fa-brands fa-linkedin social-color"></i>
-                        <i className="fa-brands fa-steam social-color"></i>
+                       <a href="https://www.linkedin.com/in/anton-abrahamsson-1213b9b6/"> <i className="fa-brands fa-linkedin social-color"></i></a>
+                       <a href="https://github.com/AntcnAbrahamsscn"> <i className="fa-brands fa-github social-color"></i></a>
+                       <a href="https://www.instagram.com/anton_abrahamsson/"> <i className="fa-brands fa-instagram social-color"></i></a>
+                       <a href="https://open.spotify.com/user/3123y3p2kyofnzsu32mz5s7eft3m?si=e9a5d711aa314972"> <i class="fa-brands fa-spotify"></i></a>
                     </div>
                 </div>
                 <div className="right-text-footer">
-                    <p>abrahamsson37@gmail.com</p>
+                    <p>Student @ NBI/ Handelsakademin</p>
                     <p>
                         Music by{" "}
-                        <a href="https://pixabay.com/users/fassounds-3433550/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=112191">
-                            FASSounds
+                        <a href="https://pixabay.com/users/monument_music-34040748/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=159615">
+                            Oleksii Holubiev
                         </a>{" "}
                         from{" "}
-                        <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=112191">
+                        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=159615">
                             Pixabay
-                        </a>{" "}
+                        </a>
                     </p>{" "}
                 </div>
             </div>

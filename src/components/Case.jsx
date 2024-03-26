@@ -38,9 +38,9 @@ export default function Case() {
     };
 
     return (
-        <section className="grid">
+        <section id="case-section"className="grid">
             <h3 className="case-header">Case</h3>
-            <section className="image-accordion" id="case">
+            <div className="image-accordion">
                 {items.map((item, index) => (
                     <article
                         key={item.img}
@@ -63,13 +63,13 @@ export default function Case() {
                             >
                                 {textVisibility[index] ? "close" : "about"}
                             </button>
-                            <a href={item.ghUrl} className="read-more-btn play-button">{<i class="fa-brands fa-github"></i>}</a>
-                            <a href={item.url} className="read-more-btn play-button">{<i class="fa-solid fa-play"></i>}</a>
+                            <a href={item.ghUrl} className="read-more-btn play-button">{<i className="fa-brands fa-github"></i>}</a>
+                            <a href={item.url} className="read-more-btn play-button">{<i className="fa-solid fa-play"></i>}</a>
                             </div>
                         </div>
                     </article>
                 ))}
-            </section>
+            </div>
         </section>
     );
 }

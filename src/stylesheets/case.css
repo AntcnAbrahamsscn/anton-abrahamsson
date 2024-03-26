@@ -1,3 +1,8 @@
+#case-section {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
 .case-header {
     grid-column: 1/9;
     text-align: center;
@@ -18,7 +23,7 @@ article {
     position: relative;
     overflow: hidden;
     width: 64px;
-    height: 70vh;
+    height: 80vh;
     border-radius: 36px;
     display: flex;
     align-items: flex-end;

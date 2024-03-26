@@ -1,6 +1,6 @@
 // Components
 import {useState, useEffect} from "react";
-import BackgroundSong from "../assets/lofi-bg-music.mp3";
+import BackgroundSong from "../assets/cruising-down-8bit-lane-159615.mp3";
 
 // Stylesheets
 import '../stylesheets/music-button.css'
