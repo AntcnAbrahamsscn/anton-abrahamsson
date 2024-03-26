@@ -6,6 +6,7 @@
     text-align: center;
     align-items: center;
     grid-column: 1/9;
+    background: var(--color-background);
 }
 
 .left-text-footer {

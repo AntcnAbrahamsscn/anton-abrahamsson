@@ -38,7 +38,7 @@
     .welcome-text {
         grid-column: 1/5;
         order: 1;
-        text-align: left;
+        margin: 0;
     }
 
     .welcome-img {
