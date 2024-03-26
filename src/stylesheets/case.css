@@ -82,6 +82,7 @@ article img {
     cursor: pointer;
     width: auto;
     border: 1px solid #ddcecd;
+    transition: 0.3s;
 }
 
 button.read-more-btn {
@@ -91,6 +92,7 @@ button.read-more-btn {
 .read-more-btn:hover {
     background-color: #ddcecd;
     color: #222328;
+    transition: 0.3s;
 }
 
 .hidden {

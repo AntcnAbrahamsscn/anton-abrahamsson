@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     font-size: 0.7em;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     text-align: center;
     align-items: center;
     grid-column: 1/9;
@@ -57,7 +57,7 @@ span {
     .footer-flex {
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
 
     .left-text-footer {
