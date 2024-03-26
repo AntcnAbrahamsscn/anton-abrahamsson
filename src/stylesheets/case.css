@@ -4,11 +4,6 @@
     /* margin-top: 90px; */
 }
 
-/* .case-container {
-    height: 100vh;
-} */
-
-/* Slider */
 .image-accordion {
     display: flex;
     gap: 10px;
@@ -29,11 +24,12 @@ article {
     align-items: flex-end;
     opacity: 0.5;
     transition: 0.5s;
-    /* background-color: white; */
 }
+
 article:hover {
     opacity: 0.75;
 }
+
 article.active {
     width: 100%;
     opacity: 1;
@@ -54,10 +50,12 @@ article .content {
     visibility: hidden;
     padding: 100px 20px 20px 20px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 14px;
     background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 100%));
     transition: 0.25s;
+    flex-direction: column;
+    text-align: center;
 }
 
 article img {
@@ -65,7 +63,7 @@ article img {
     z-index: 0;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -74,4 +72,53 @@ article img {
 
 .white-color {
     color: #ddcecd;
+}
+
+.read-more-btn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    border: 1px solid #ddcecd;
+}
+
+button.read-more-btn {
+    width: 100px;
+}
+
+.read-more-btn:hover {
+    background-color: #ddcecd;
+    color: #222328;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+}
+@media screen and (min-width: 620px) {
+    .button-container {
+        justify-content: flex-start;
+    }
+    article .content {
+        text-align: left;
+    }
+}
+/* Large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
 }
