@@ -1,6 +1,6 @@
 import React from "react";
 import { useFadeIn } from "../scripts/useFadeIn";
-import '../stylesheets/about-me.css'
+import "../stylesheets/about-me.css";
 
 export default function AboutMe() {
     const sectionRef = useFadeIn();
@@ -10,12 +10,13 @@ export default function AboutMe() {
             <div className="contact-styling">
                 <h3>about me</h3>
                 <p className="leading">
-                    Hi, my name is Anton Abrahamsson. I'm a 28 year old Front
-                    End student who loves snowboarding and watching bushcraft videos on YouTube. Two
-                    years ago, I completed my Bachelor's degree in Media and
-                    Communication with a specialization in Visual Communication
-                    and Design at Karlstad University. Since graduation, I have
-                    been working as a print editor at at NWT Media and GP.
+                    My name is Anton Abrahamsson. I'm a 28 year old Front End
+                    student who loves snowboarding and watching bushcraft videos
+                    on YouTube. Two years ago, I completed my Bachelor's degree
+                    in Media and Communication with a specialization in Visual
+                    Communication and Design at Karlstad University. Since
+                    graduation, I have been working as a print editor at NWT
+                    Media and GP, via Media Resurs.
                 </p>
                 <p className="leading">
                     In addition, this fall I started my journey into Front End
