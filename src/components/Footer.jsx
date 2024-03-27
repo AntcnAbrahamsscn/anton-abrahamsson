@@ -18,7 +18,7 @@ export default function Footer() {
                        <a href="https://www.linkedin.com/in/anton-abrahamsson-1213b9b6/"> <i className="fa-brands fa-linkedin social-color"></i></a>
                        <a href="https://github.com/AntcnAbrahamsscn"> <i className="fa-brands fa-github social-color"></i></a>
                        <a href="https://www.instagram.com/anton_abrahamsson/"> <i className="fa-brands fa-instagram social-color"></i></a>
-                       <a href="https://open.spotify.com/user/3123y3p2kyofnzsu32mz5s7eft3m?si=e9a5d711aa314972"> <i class="fa-brands fa-spotify"></i></a>
+                       <a href="https://open.spotify.com/user/3123y3p2kyofnzsu32mz5s7eft3m?si=e9a5d711aa314972"> <i className="fa-brands fa-spotify"></i></a>
                     </div>
                 </div>
                 <div className="right-text-footer">

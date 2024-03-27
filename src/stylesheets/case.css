@@ -22,9 +22,9 @@
 article {
     position: relative;
     overflow: hidden;
-    width: 64px;
+    width: 30px;
     height: 80vh;
-    border-radius: 36px;
+    border-radius: 10px;
     display: flex;
     align-items: flex-end;
     opacity: 0.5;
@@ -93,6 +93,10 @@ article img {
     transition: 0.3s;
 }
 
+.item-skills {
+    font-size: 0.8em;
+}
+
 button.read-more-btn {
     width: 100px;
 }
@@ -123,6 +127,9 @@ button.read-more-btn {
     }
     article .content {
         text-align: left;
+    }
+    article {
+        width: 64px;
     }
 }
 /* Large tablets and laptop styles */
