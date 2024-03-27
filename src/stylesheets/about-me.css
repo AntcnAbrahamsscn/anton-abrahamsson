@@ -25,6 +25,9 @@
 
 /* Large tablets and laptop styles */
 @media screen and (min-width: 960px) {
+    .contact-styling {
+        padding-bottom: 200px;
+    }
 }
 
 /* Desktop styles */

@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import hangbotImage from "../assets/hangbot-cover.png";
 import pokemonImage from "../assets/pokemon-cover.png";
+import { useFadeIn } from "../scripts/useFadeIn";
 import "../stylesheets/case.css";
 
 const items = [
@@ -8,7 +9,8 @@ const items = [
         img: hangbotImage,
         header: "Hangbot the game",
         text: "Hangbot is a project developed by me and two other students for a school assignment. Our objective was to create a hangman game using HTML, CSS, and JS. The game features an list of over 18,000 random Swedish words. To add a competitive edge, we implemented a high score list that stores data using local storage.",
-        url: "https://wanderingkitty.github.io/BionicCriminals/", ghUrl: "https://github.com/wanderingkitty/BionicCriminals"
+        url: "https://wanderingkitty.github.io/BionicCriminals/",
+        ghUrl: "https://github.com/wanderingkitty/BionicCriminals"
     },
     {
         img: pokemonImage,
@@ -23,10 +25,11 @@ export default function Case() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [textVisibility, setTextVisibility] = useState(Array(items.length).fill(false));
 
+    const sectionRef = useFadeIn();
+
+
     const handleToggle = (index) => {
-        
-            setActiveIndex(index);
-        
+        setActiveIndex(index);
     };
 
     const toggleParagraphVisibility = (index) => {
@@ -38,7 +41,7 @@ export default function Case() {
     };
 
     return (
-        <section id="case-section"className="grid">
+        <section id="case-section" className="grid fade-in" ref={sectionRef}>
             <h3 className="case-header">Case</h3>
             <div className="image-accordion">
                 {items.map((item, index) => (
@@ -54,17 +57,21 @@ export default function Case() {
                                 {item.text}
                             </p>
                             <div className="button-container">
-                            <button
-                                className="read-more-btn"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    toggleParagraphVisibility(index);
-                                }}
-                            >
-                                {textVisibility[index] ? "close" : "about"}
-                            </button>
-                            <a href={item.ghUrl} className="read-more-btn play-button">{<i className="fa-brands fa-github"></i>}</a>
-                            <a href={item.url} className="read-more-btn play-button">{<i className="fa-solid fa-play"></i>}</a>
+                                <button
+                                    className="read-more-btn"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        toggleParagraphVisibility(index);
+                                    }}
+                                >
+                                    {textVisibility[index] ? "close" : "about"}
+                                </button>
+                                <a href={item.ghUrl} className="read-more-btn play-button">
+                                    <i className="fa-brands fa-github"></i>
+                                </a>
+                                <a href={item.url} className="read-more-btn play-button">
+                                    <i className="fa-solid fa-play"></i>
+                                </a>
                             </div>
                         </div>
                     </article>

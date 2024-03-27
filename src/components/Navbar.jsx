@@ -33,7 +33,7 @@ export default function Navbar() {
 
     return (
         <nav className="site-nav grid">
-            <h1><a href="#landing-page">abra.</a></h1>
+            <h1><a href="#landing-page">abra</a></h1>
             <ul>
                 <li className={activeLink === "case-section" ? "active" : ""}>
                     <a href="#case-section">

@@ -14,9 +14,8 @@
 }
 
 .site-nav li {
-    /* margin-right: 30px; */
     list-style-type: none;
-    /* width: 50px; */
+    text-align: right;
 }
 
 .site-nav h1 {

@@ -1,9 +1,12 @@
 import React from "react";
+import { useFadeIn } from "../scripts/useFadeIn";
 import '../stylesheets/about-me.css'
 
 export default function AboutMe() {
+    const sectionRef = useFadeIn();
+
     return (
-        <section id="about-me"className="grid ">
+        <section id="about-me" className="grid fade-in" ref={sectionRef}>
             <div className="contact-styling">
                 <h3>about me</h3>
                 <p className="leading">
