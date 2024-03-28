@@ -10,7 +10,7 @@ export default function AboutMe() {
             <div className="contact-styling">
                 <h3>about me</h3>
                 <p className="leading">
-                    My name is Anton Abrahamsson. I'm a 28 year old Front End
+                    My name is Anton Abrahamsson and I'm a 28 year old Front End
                     student who loves snowboarding and watching bushcraft videos
                     on YouTube. Two years ago, I completed my Bachelor's degree
                     in Media and Communication with a specialization in Visual
