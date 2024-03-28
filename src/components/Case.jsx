@@ -52,7 +52,7 @@ export default function Case() {
 
     return (
         <section id="case-section" className="grid fade-in" ref={sectionRef}>
-            <h3 className="case-header">Case</h3>
+            <h3 className="case-header">case</h3>
             <div className="image-accordion">
                 {items.map((item, index) => (
                     <article

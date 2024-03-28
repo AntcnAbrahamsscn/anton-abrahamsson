@@ -3,6 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
+    /* backdrop-filter: blur(100px); */
 }
 
 .site-nav h1 {
