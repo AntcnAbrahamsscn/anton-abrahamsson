@@ -11,7 +11,7 @@ export default function LandingPage() {
         <section id="landing-page" className="grid landing-page" >
             <div className="welcome-text">
                 <h2 className="span-fp-style">
-                     Hi! I'm Anton.
+                     Hi, I'm Anton!
                 </h2>
                 <p>
                     {" "}
