@@ -10,7 +10,7 @@ export default function AboutMe() {
             <div className="contact-styling">
                 <h3>about me</h3>
                 <p className="leading">
-                    My name is Anton Abrahamsson and I'm a 28 year old Front End
+                    My name is Anton Abrahamsson and I'm a 28 years old frontend
                     student who loves snowboarding and watching bushcraft videos
                     on YouTube. Two years ago, I completed my Bachelor's degree
                     in Media and Communication with a specialization in Visual
@@ -19,10 +19,10 @@ export default function AboutMe() {
                     Media and GP, via Media Resurs.
                 </p>
                 <p className="leading">
-                    In addition, this fall I started my journey into Front End
+                    In addition, this fall I started my journey into frontend
                     studies, motivated by my interest in web development and
                     programming. My goal is to merge the skills I acquire in
-                    Front End development with my background in media, forming a
+                    frontend development with my background in media, forming a
                     expertise that I am eager to contribute to my future
                     workplace. Currently, I am searching for an workplace to
                     have my LIA (Lärande i Arbete) for the periods of:
