@@ -22,9 +22,9 @@ export default function AboutMe() {
                     In addition, this fall I started my journey into frontend
                     studies, motivated by my interest in web development and
                     programming. My goal is to merge the skills I acquire in
-                    frontend development with my background in media, forming a
+                    frontend development with my background in media, forming an
                     expertise that I am eager to contribute to my future
-                    workplace. Currently, I am searching for an workplace to
+                    workplace. Currently, I am searching for a workplace to
                     have my LIA (Lärande i Arbete) for the periods of:
                     2024-11-11 - 2025-01-31 and 2025-03-17 - 2025-06-06.
                 </p>
