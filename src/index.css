@@ -75,7 +75,7 @@ button {
 /* Dark mode */
 [data-theme="dark"] {
     --color-background: #1c1d21;
-    --primary-text-color: rgb(221, 206, 205);
+    --primary-text-color: #ddcecd;
     --secondary-text-color: #ddcecd;
     --accent-color: #f97068;
     --hover-color: #3e3f45;
