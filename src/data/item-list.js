@@ -7,7 +7,7 @@ const items = [
     {
         img: hollowImage,
         header: "Hollow Webshop",
-        text: "For this project, I created a fully functional and responsive webshop for Hollow, my fictional surf brand. The website is designed with user experience in mind, ensuring easy navigation for customers who want to browse and purchase surf-related products. I also added an admin feature that lets you create, delete and edit the products.",
+        text: "For this project, I created a responsive webshop for Hollow, my fictional surf brand. The website is designed with user experience in mind, ensuring easy navigation for customers who want to browse and purchase surf-related products. I also added an admin feature that lets you create, delete and edit the products.",
         url: "https://antcnabrahamsscn.github.io/hollow-webshop/",
         ghUrl: "https://github.com/AntcnAbrahamsscn/hollow-webshop",
         skills: "REACT | FIRESTORE",
