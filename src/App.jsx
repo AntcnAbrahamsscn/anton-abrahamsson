@@ -14,9 +14,8 @@ function App() {
         // Show sections with a delay when the component mounts
         const timeoutId = setTimeout(() => {
             setShowSections(true);
-        }, 500); // Adjust the delay as needed
+        }, 500); 
 
-        // Cleanup function to clear the timeout
         return () => clearTimeout(timeoutId);
     }, []);
 

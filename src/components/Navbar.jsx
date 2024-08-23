@@ -17,7 +17,7 @@ export default function Navbar() {
                     }
                 });
             },
-            { threshold: 0.5 }
+            { threshold: 0.3, rootMargin: '-50px 0px 0px 0px' } 
         );
 
         document.querySelectorAll("section").forEach((section) => {
