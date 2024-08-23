@@ -32,7 +32,7 @@ const items = [
         img: terraImage,
         header: "Terra Insect Protein",
         text: "Terra - Insect Protein, an imaginary brand created for a final thesis in Media and Communication studies, explores the visual representation of insect-derived protein powder supplements. Consumer interviews informed Terra's development, focusing on purchasing priorities and considerations for protein supplements.",
-        url: "https://drive.google.com/file/d/1oWziQd1lJsjQ41JrIN7tCtuRMqBv98kP/view?usp=drive_link",
+        url: "https://drive.google.com/file/d/1ec7F_i0pAiYowHMKqYljDAHzflD0ipMV/view?usp=sharing",
         skills: "FIGMA | INDESIGN | ILLUSTRATOR",
     },
 ];
