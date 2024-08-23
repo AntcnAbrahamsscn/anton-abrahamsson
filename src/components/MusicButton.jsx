@@ -1,9 +1,9 @@
 // Components
-import {useState, useEffect} from "react";
-import BackgroundSong from "../assets/cruising-down-8bit-lane-159615.mp3";
+import { useState, useEffect } from "react";
+import BackgroundSong from "../assets/rainy-day-233993.mp3";
 
 // Stylesheets
-import '../stylesheets/music-button.css'
+import "../stylesheets/music-button.css";
 
 export default function MusicButton() {
     const [audio] = useState(new Audio(BackgroundSong));

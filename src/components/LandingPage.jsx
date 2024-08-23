@@ -15,7 +15,7 @@ export default function LandingPage() {
                 </h2>
                 <p>
                     {" "}
-                    Code-craving frontend student with a bachelor in Media. Welcome to my portfolio - I hope you like it!
+                    Frontend student with a bachelor in Media and Communication. Welcome to my portfolio - I hope you like it!
                 </p>
             </div>
             <div className="welcome-img">
