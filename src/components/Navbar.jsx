@@ -47,11 +47,6 @@ export default function Navbar() {
                         {activeLink === "about-me" ? "/about" : "about"}
                     </a>
                 </li>
-             
-                <div className="site-nav-settings">
-                    <DarkMode />
-                    <MusicButton />
-                </div>
             </ul>
         </nav>
     );

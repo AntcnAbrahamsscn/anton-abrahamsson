@@ -23,9 +23,6 @@ export default function Footer() {
                 </div>
                 <div className="right-text-footer">
                     <p>Student @ NBI/ Handelsakademin</p>
-                    <p>
-                    Music by <a href="https://pixabay.com/users/soulprodmusic-30064790/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=233993">Oleg Fedak</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=233993">Pixabay</a>
-                    </p>{" "}
                 </div>
             </div>
         </div>

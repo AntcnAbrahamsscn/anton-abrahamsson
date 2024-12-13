@@ -3,8 +3,6 @@ import { useFadeIn } from "../scripts/useFadeIn";
 import {items} from './../data/item-list'
 import "../stylesheets/case.css";
 
-
-
 export default function Case() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [textVisibility, setTextVisibility] = useState(Array(items.length).fill(false));
@@ -36,9 +34,11 @@ export default function Case() {
                         <img src={item.img} alt={item.header} />
                         <div className="content">
                             <h2 className="white-color">{item.header}</h2>
-                            <p className={`white-color ${textVisibility[index] ? "visible" : "hidden"}`}>
-                                {item.text}
-                            </p>
+                            <div className={`text-container ${textVisibility[index] ? "expanded" : ""}`}>
+                                <p className="white-color description">
+                                    {item.text}
+                                </p>
+                            </div>
                             <p className="item-skills white-color">{item.skills}</p>
                             <div className="button-container">
                                 <button
@@ -51,9 +51,9 @@ export default function Case() {
                                     {textVisibility[index] ? "close" : "about"}
                                 </button>
                                 <a href={item.url} className="read-more-btn play-button">
-                                    {/* <i className="fa-solid fa-play"></i> */}visit
+                                    visit
                                 </a>
-                                {item.ghUrl && ( // Check if ghUrl exists
+                                {item.ghUrl && (
                                     <a href={item.ghUrl} className="read-more-btn play-button">
                                         <i className="fa-brands fa-github"></i>
                                     </a>

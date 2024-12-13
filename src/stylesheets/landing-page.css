@@ -31,6 +31,7 @@
     font-size: 2.6em;
     margin-bottom: 20px;
     transform: rotate(-3deg);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 620px) {
